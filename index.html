@@ -9,6 +9,28 @@
 </head>
 
 <body>
+
+    <div class="modal hide">
+        <div id="grid-input"> 
+            <label id="pixels-label" for="pixels">How many pixels should the next canvas have?</label>
+            <input id="pixels" type="number" min="1" max="64" required></input>
+            <button id="submit-button">Create.</button>
+        </div>
+    </div>
+
+    <div class="error-message hide">
+        <p id="error">ERROR:</p>
+        <p id="current-error"></p>
+        <p id="close">+</p>
+    </div>
+
+    <div id="menu">
+        <button id="clear">Clear</button>    
+        <button id="set-grids">Set Grids</button>
+        <input type="checkbox" id="change-opacity">Change Opacity</input>
+        <br>
+        <input type="checkbox" id="change-color">Change Color</input>
+    </div>
     <div id="drawing-area">
     </div>
 </body>
